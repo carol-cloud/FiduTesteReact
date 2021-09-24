@@ -1,13 +1,47 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
-import {ReposView} from './repos.view';
-
-import { UserService } from '../../services/users.services';
+import { ReposView } from './repos.view';
 
 export const ReposController = () => {
-  useEffect(() => {
-
-  }, []);
 
   return <ReposView />
-};
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
