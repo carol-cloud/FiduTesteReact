@@ -25,16 +25,11 @@ export const UsersSelectView = (props) => {
           inputProps={{
             ...params.inputProps,
             'aria-label': 'Procure alguém',
-            autoComplete: 'new-password', // disable autocomplete and autofill
+            autoComplete: 'new-password', 
           }}
           onChange={event => handleChange(event)}
           onKeyPress={(event) => handleEnterPress(event)}
         />
-            // <InputBase sx={{ ml: 1, flex: 1 }}
-            //     placeholder="Procure alguém"
-            //     inputProps={{ 'aria-label': 'Procure alguém', autoComplete: 'new-password' }}
-            //     onChange={event => handleChange(event)}
-            //     onKeyPress={(event) => handleEnterPress(event)} />
         )}
     />
 )};
