@@ -15,7 +15,7 @@ export const UsersSelectView = (props) => {
         autoHighlight
         getOptionLabel={(user) => user.login}
         renderOption={(props, user) => (
-            <UserSelectController user={user}></UserSelectController>
+            <UserSelectController key={user.id} user={user}></UserSelectController>
         )}
         renderInput={(params) => (
             <TextField sx={{ ml: 1, flex: 1 }}
