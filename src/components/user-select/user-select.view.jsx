@@ -1,20 +1,19 @@
 import React from 'react';
-import { 
+import './user-select.css';
+import {
     Box
-  } from '@material-ui/core';
+} from '@material-ui/core';
 
 export const UserSelectView = (props) => {
-    const {user} = props;
+    const { user } = props;
     return (
-        <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
-        <img
-            loading="lazy"
-            width="20"
-            src={user.avatar_url}
-            alt={`Imagem do usuário ${user.login}`}
-        />
-        {user.login}
-    </Box>
+        <Box className="user-box" component="li" {...props}>
+            <img className="user-img"
+                src={user.avatar_url}
+                alt={`Imagem do usuário ${user.login}`}
+            />
+            <span className="user-login">{user.login}</span>
+        </Box>
     );
-    
-}    
+
+}
