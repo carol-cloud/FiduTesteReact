@@ -1,18 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
 import { 
   AppBar,
   Box,
-  InputBase,
   Paper,
   Toolbar,
-  Typography,
+  Typography
 } from '@material-ui/core';
 
 import { ReposController } from './components/repos/repos.controller';
+import { UsersSelectController } from './components/users-select/users-select.controller';
+
 
 export default function SearchAppBar() {
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -24,10 +24,7 @@ export default function SearchAppBar() {
             component="form"
             sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}
           >
-
-            <InputBase sx={{ ml: 1, flex: 1 }}
-              placeholder="Procure alguém"
-              inputProps={{ 'aria-label': 'Procure alguém' }} />
+          <UsersSelectController></UsersSelectController>
           </Paper>
         </Toolbar>
       </AppBar>
