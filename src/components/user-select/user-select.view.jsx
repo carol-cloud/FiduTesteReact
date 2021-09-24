@@ -5,9 +5,9 @@ import {
 } from '@material-ui/core';
 
 export const UserSelectView = (props) => {
-    const { user } = props;
+    const { user, handleClick } = props;
     return (
-        <Box className="user-box" component="li" {...props}>
+        <Box onClick={handleClick} className="user-box" component="li">
             <img className="user-img"
                 src={user.avatar_url}
                 alt={`Imagem do usuário ${user.login}`}
