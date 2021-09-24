@@ -1,0 +1,15 @@
+.user-box {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.user-login {
+    font-weight: bold;
+}
