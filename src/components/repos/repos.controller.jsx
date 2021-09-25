@@ -1,7 +1,7 @@
 import React, {useContext, useState, useEffect} from 'react';
 import {UserContext} from '../../providers/user';
 import { UserService } from '../../services/users.services';
-
+import { RepoController } from '../repo/repo.controller';
 import { ReposView } from './repos.view';
 
 export const ReposController = () => {
@@ -20,8 +20,12 @@ export const ReposController = () => {
       getRepos();
     }
   }, [userSelected])
+
+  const renderRepos = () => {
+    return reposUserSelected.map((repo) => <RepoController key={repo.id} repo={repo}/>)
+  }
   
-  return <ReposView />
+  return <ReposView renderRepos={renderRepos} />
 }
 
 
