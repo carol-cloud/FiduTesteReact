@@ -16,6 +16,10 @@ npm install
 npm start
 ```
 
+## Funcionamento
+
+Digitar o nome do (a) usuário (a) desejado (a) no campo de busca e apertar a tecla Enter, é necessário o enter para a busca ser realizada. Em seguida, escolher o (a) usuário (a) e seus repositórios serão listados. 
+
 ## Desafios
 
 * Revisar a arquitetura de um projeto em React
