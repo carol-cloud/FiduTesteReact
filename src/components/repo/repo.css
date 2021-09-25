@@ -1,3 +1,9 @@
 .Repo {
     cursor: pointer;
 }
+
+.Repo-link {
+    text-decoration: none;
+    outline: none;
+    color: black;
+}

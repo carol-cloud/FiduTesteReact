@@ -1,7 +1,6 @@
 import React from 'react';
 import './repo.css';
 import {
-    List,
     ListItem,
     ListItemText
 } from '@material-ui/core';
@@ -10,10 +9,10 @@ import {
 export const RepoView = (prop) => {
   const { repo } = prop;
   return (
-    <List className="Repo">
-      <ListItem>
-        <ListItemText primary={repo.name} secondary={repo.description} />
+      <ListItem className="Repo">
+        <a href={repo.url} target="_blank" className="Repo-link">
+          <ListItemText primary={repo.name} secondary={repo.description} />
+        </a>
       </ListItem>
-    </List>
   );
 }
